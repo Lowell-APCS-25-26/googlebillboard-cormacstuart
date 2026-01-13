@@ -4,9 +4,19 @@
 package org.APCSLowell;
 
 public class GoogleBillboard {
-    public boolean isPrime(long n) {
-        // Copy and paste your answer from CodingBat appropriatley here.
-        return false;
+    public boolean isPrime(long num) {
+        // yCopy and paste your answer from CodingBat appropriatley here.
+         int notprime = 0;
+  for(int i = 2; i <= Math.sqrt(num); i++){
+    if (num%i == 0 && num !=i)
+        notprime++;
+
+  }
+if (num <=1)
+  return false;
+
+  
+  return notprime==0;
     }
     public long firstPrimeNumberIn(String n) {
         // Write your code here.
